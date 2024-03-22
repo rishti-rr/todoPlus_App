@@ -54,8 +54,9 @@
 .task_submit {
     font-size: 16px;
     font-weight: 500;
+    
     background-color: #1b9468;
-    color: #fff;
+    color: #000000;
     border-radius: 5px;
     height: 40px;
     padding: 3px 13px;

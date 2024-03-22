@@ -6,6 +6,8 @@ import TaskColumn from './components/TaskColumn';
 import todoIcon from "./assets/pics/dart.png";
 import doingIcon from "./assets/pics/stars.png";
 import doneIcon from "./assets/pics/check-mark.png"
+import NavBar from './shared/NavBar';
+import Footer from './shared/Footer';
 
 const oldTasks = localStorage.getItem("tasks");
 
@@ -22,6 +24,10 @@ const App = () => {
 
   // console.log("tasks", tasks);
   return (
+    <>
+    <NavBar></NavBar>
+    
+    
     <div className='app'>
       <TaskForm setTasks={setTasks} />
       <main className='app_main'>
@@ -51,6 +57,8 @@ const App = () => {
         <section className='task_column'>Section 3</section> */}
       </main>
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 
